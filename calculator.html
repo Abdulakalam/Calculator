@@ -1,0 +1,127 @@
+<!-- Create a simple Program to build the Calculator in JavaScript using with HTML and CSS web languages. -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title> JavaScript Calculator </title>
+
+<style>
+h1 {
+	text-align: center;
+    width: 400px;
+    margin: auto;
+	padding: 5px;
+	background-color: rgb(213, 226, 29);
+	color: rgb(184, 12, 12);
+	}
+
+#clear{
+width: 170px;
+border: 3px solid rgb(15, 203, 228);
+	border-radius: 13px;
+	padding: 20px;
+	background-color: rgb(243, 14, 14);
+}
+
+.formstyle
+{
+width: 300px;
+height: 540px;
+margin: auto;
+border: 3px solid rgb(7, 105, 145);
+border-radius: 15px;
+padding: 20px;
+}
+
+
+
+input
+{
+width: 20px;
+background-color: rgb(155, 6, 123);
+color: rgb(218, 247, 221);
+border: 3px solid rgb(23, 167, 10);
+	border-radius: 5px;
+	padding: 26px;
+	margin: 5px;
+	font-size: 15px;
+}
+
+
+#calc{
+width: 250px;
+border: 5px solid rgb(81, 194, 47);
+	border-radius: 3px;
+	padding: 20px;
+	margin: auto;
+  background-color: blue;
+}
+#delete{
+  width: 100px;
+  background-color: rgb(155, 6, 123);
+color: rgb(218, 247, 221);
+border: 3px solid rgb(23, 167, 10);
+	border-radius: 5px;
+	padding: 26px;
+	margin: 5px;
+	font-size: 15px;
+}
+
+</style>
+
+</head>
+<body>
+<h1> Calculator  </h1>
+<div class= "formstyle">
+<form name = "forms">
+	
+	<!-- i/p display in calculator. -->
+  <input id = "calc" type ="text" name = "answer"> 
+  <br>
+  <br>
+  
+  <!--calculator buttons. -->   <!--  display the number prsses by the user. -->
+  <input type = "button" value = "1" onclick = "forms.answer.value += '1' ">
+  <input type = "button" value = "2" onclick = "forms.answer.value += '2' ">
+  <input type = "button" value = "3" onclick = "forms.answer.value += '3' ">
+   <input type = "button" value = "+" onclick = "forms.answer.value += '+' ">
+  <br>
+  <br>
+  
+  <input type = "button" value = "4" onclick = "forms.answer.value += '4' ">
+  <input type = "button" value = "5" onclick = "forms.answer.value += '5' ">
+  <input type = "button" value = "6" onclick = "forms.answer.value += '6' ">
+  <input type = "button" value = "-" onclick = "forms.answer.value += '-' ">
+  <br> 
+  <br>
+  
+  <input type = "button" value = "7" onclick = "forms.answer.value += '7' ">
+  <input type = "button" value = "8" onclick = "forms.answer.value += '8' ">
+  <input type = "button" value = "9" onclick = "forms.answer.value += '9' ">
+  <input type = "button" value = "*" onclick = "forms.answer.value += '*' ">
+  <br>
+   <br>
+  
+  
+  <input type = "button" value = "/" onclick = "forms.answer.value += '/' ">
+  <input type = "button" value = "0" onclick = "forms.answer.value += '0' ">
+    <input type = "button" value = "." onclick = "forms.answer.value += '.' ">
+
+
+	<!-- shows the sum results. -->
+  <input type = "button" value = "=" onclick = "forms.answer.value = eval(forms.answer.value) ">
+  <br> 
+
+
+  <!--  Cancel button. -->
+  
+  <input type = "button" value = "delete" onclick = "forms.answer.value = forms.answer.value = forms.answer.value.substr(0,forms.answer.value.length-1) " id="delete">
+
+  <input type = "button" value = "Clear All" onclick = "forms.answer.value = ' ' " id= "clear" >
+  <br> 
+  
+</form>
+</div>
+</body>
+</html>
+
+ 
